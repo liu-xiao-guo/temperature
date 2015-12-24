@@ -1,0 +1,19 @@
+name: temp
+version: 1.0
+vendor: XiaoGuo Liu <xiaoguo.liu@canonical.com>
+summary: Temperature sensor
+description: Use the temperature sensor to collect data
+icon: icon.png
+
+#services:
+#  sensor:
+#    start: bin/sensor
+
+binaries:
+  sensor:
+    exec: bin/sensor
+
+parts:
+  sensor:
+    plugin: go
+    source: ./src/sensor
